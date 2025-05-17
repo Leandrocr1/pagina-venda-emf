@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMF Defense Bracelet - Protect Yourself From Harmful Radiation</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f8f0;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        .header {
+            background-color: #a7e8a7;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .section-subtitle {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        /* Problem Section */
+        .problem {
+            background-color: #a7e8a7;
+            padding: 60px 0;
+        }
+        
+        .problem-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .highlight {
+            font-weight: bold;
+            color: #e53e3e;
+        }
+        
+        /* Evidence Section */
+        .evidence {
+            background-color: #a7d7e8;
+            padding: 60px 0;
+        }
+        
+        .evidence-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .evidence-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Symptoms Section */
+        .symptoms {
+            background-color: #a7e8c5;
+            padding: 60px 0;
+        }
+        
+        .symptoms-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .symptoms-list {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .symptoms-list ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        
+        .symptoms-list li {
+            margin-bottom: 10px;
+        }
+        
+        /* Solution Section */
+        .solution {
+            background-color: #a7c7e8;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            background-color: #a7d7e8;
+            padding: 60px 0;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .benefit-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        /* Guarantee Section */
+        .guarantee {
+            background-color: #a7e8a7;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .guarantee-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        /* CTA Styles */
+        .cta-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            margin: 20px 0;
+            text-align: center;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cta-button:hover {
+            background-color: #45a049;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .cta-button:before {
+            content: "★ ";
+        }
+        
+        .cta-section {
+            background-color: #4CAF50;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .cta-section .cta-button {
+            background-color: white;
+            color: #4CAF50;
+            font-size: 1.5rem;
+        }
+        
+        .cta-section .cta-button:hover {
+            background-color: #f0f0f0;
+        }
+        
+        /* Footer Styles */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        /* Floating CTA */
+        .floating-cta {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+        
+        .floating-cta .cta-button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin: 0;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .problem-grid, .evidence-grid, .symptoms-grid, .guarantee-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .section-subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .cta-button {
+                font-size: 1.1rem;
+                padding: 12px 25px;
+            }
+            
+            .cta-section .cta-button {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>EMF Radiation is Dangerous to Your Health</h1>
+            <p>Nobody wants to hear that the electromagnetic radiation we're exposed to at high doses today can make you sick. After all, we depend on electronics, WiFi, and cellphones and you simply can't get along without them.</p>
+            <img src="images/emf_danger_header.png" alt="EMF Radiation Dangers">
+        </div>
+    </header>
+    
+    <!-- Problem Section -->
+    <section class="problem section">
+        <div class="container">
+            <div class="problem-grid">
+                <div>
+                    <h2>The Invisible Threat All Around Us</h2>
+                    <p>In fact, even if you don't own a cellphone and never use WiFi, you're exposed to radiation all day long because of powerlines, cell phone towers, and 5G. Even satellites overhead generate EMFs that you simply can't get away from.</p>
+                    <p>Study after study has shown that EMFs are harmful to your health.</p>
+                    <p>In fact, a recent review at the School of Public Health at UC Berkeley found that spending just 17 minutes per day on your phone over the course of <span class="highlight">10 years is associated with a 60% increase in brain cancer!</span></p>
+                    <p>EMF radiation causes DNA damage, disrupts hormones, creates stress proteins, negatively affects fertility, and the CDC concluded there is a high probability that EMFs cause 2 kinds of brain tumors.</p>
+                </div>
+                <div>
+                    <img src="images/emf_danger_header.png" alt="Cell Tower Radiation">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Evidence Section -->
+    <section class="evidence section">
+        <div class="container">
+            <h2 class="section-title">The Scientific Evidence They Don't Want You to See</h2>
+            <div class="evidence-grid">
+                <div>
+                    <img src="images/brain_mri.png" alt="Brain MRI Showing EMF Effects">
+                </div>
+                <div class="evidence-box">
+                    <h3>If EMF radiation is dangerous, why haven't we heard about it?</h3>
+                    <p>Well, the answer to that will probably make you mad...</p>
+                    <p>It turns out, powerful lobbyists from the telecommunications industry spend 132 MILLION dollars every year lobbying to get politicians to ignore cell phone safety.</p>
+                    <p>They also spend $18 million directly contributing to members of congress at the federal level...</p>
+                    <p><strong>Basically, they've become the Big Tobacco of this generation...</strong></p>
+                    <p>They've got the politicians in their pockets, and they've managed to get the US to stop funding research on the dangers of EMFs.</p>
+                    <p>That's right... the government stopped funding research in the 1990s.</p>
+                </div>
+            </div>
+            <div style="margin-top: 40px; text-align: center;">
+                <img src="images/periodic_table.png" alt="Periodic Table Elements in EMF Defense">
+                <p style="margin-top: 20px;">The EMF Defense Bracelet uses specific elements from the periodic table to create a protective field around your body.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Symptoms Section -->
+    <section class="symptoms section">
+        <div class="container">
+            <h2 class="section-title">Are You Experiencing These Symptoms?</h2>
+            <div class="symptoms-grid">
+                <div>
+                    <img src="images/woman_laptop.png" alt="Woman Exposed to Laptop EMF">
+                </div>
+                <div class="symptoms-list">
+                    <h3>EMF radiation causes damage at a cellular level</h3>
+                    <p>It creates oxidative stress, which is what ages your body's DNA. It disrupts your hormones, including cortisol (stress hormone), melatonin (sleep hormone), testosterone, and estrogen.</p>
+                    <p>It also messes with the electrical activity in your brain, which causes brain fog, exhaustion, and mood problems.</p>
+                    <h3>Here are just a few of the known symptoms of EMF exposure:</h3>
+                    <ul>
+                        <li>Sleep disturbances, including insomnia</li>
+                        <li>Headache</li>
+                        <li>Depression and depressive symptoms</li>
+                        <li>Tiredness and fatigue</li>
+                        <li>Dysesthesia (a painful, often itchy sensation)</li>
+                        <li>Lack of concentration</li>
+                        <li>Changes in memory</li>
+                        <li>Weight gain</li>
+                        <li>Dizziness</li>
+                        <li>Irritability</li>
+                        <li>Restlessness and anxiety</li>
+                        <li>Nausea</li>
+                        <li>Skin burning and tingling</li>
+                    </ul>
+                    <p>When you understand how the body works, it's no wonder we're suffering from so many chronic diseases!</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <p>You can't "unplug" from exposure to EMFs.</p>
+                <p><strong>But you can protect yourself!</strong></p>
+                <a href="https://www.digistore24.com/product/466496?aff=leandrocr1" class="cta-button">CLICK HERE TO PURCHASE NOW!</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Solution Section -->
+    <section class="solution section">
+        <div class="container">
+            <h2 class="section-title">Introducing the EMF Defense Bracelet</h2>
+            <h3 class="section-subtitle">Choose black or white</h3>
+            <img src="images/bracelet_colors.png" alt="EMF Defense Bracelet Color Options">
+            <p style="max-width: 800px; margin: 30px auto;">The EMF Defense Bracelet contains black tourmaline and 36 minerals that generate negative ions. These negative ions create a protective field that neutralizes and deflects the positive ions of EMF radiation, protecting your body from harmful effects.</p>
+            <a href="https://www.digistore24.com/product/466496?aff=leandrocr1" class="cta-button">CLICK HERE TO PURCHASE NOW!</a>
+        </div>
+    </section>
+    
+    <!-- Benefits Section -->
+    <section class="benefits section">
+        <div class="container">
+            <h2 class="section-title">Beautiful design that goes with everything...</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">Wear your bracelet and protect yourself wherever you go! It's waterproof, made of stainless steel that won't rust, discolor or irritate your skin, and the simple design goes from the gym to date night without skipping a beat.</p>
+            <img src="images/bracelet_design.png" alt="EMF Defense Bracelet Design and Usage">
+            <div class="benefits-grid" style="margin-top: 40px;">
+                <div class="benefit-box">
+                    <h3>24/7 Protection</h3>
+                    <p>Continuous protection against EMF radiation wherever you go, day and night</p>
+                </div>
+                <div class="benefit-box">
+                    <h3>Elegant Design</h3>
+                    <p>Sleek, minimalist style that complements any outfit or occasion</p>
+                </div>
+                <div class="benefit-box">
+                    <h3>Durable Construction</h3>
+                    <p>Waterproof, stainless steel that won't rust, discolor, or irritate your skin</p>
+                </div>
+                <div class="benefit-box">
+                    <h3>Two Color Options</h3>
+                    <p>Available in classic black or elegant white to match your personal style</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Guarantee Section -->
+    <section class="guarantee section">
+        <div class="container">
+            <h2 class="section-title">Any Reason Refund Guarantee</h2>
+            <div class="guarantee-grid">
+                <div>
+                    <p>98% of our customers LOVE our products, but just in case...you can rest assured that you're making a risk-free purchase with our Any Reason Refund Guarantee.</p>
+                    <p>In the highly unlikely event that you're not completely happy with your purchase, just let us know within 180 days and we'll refund your money for any reason... It's that simple.</p>
+                    <p>So go ahead and give our products a try today!</p>
+                </div>
+                <div>
+                    <img src="images/bracelet_design.png" alt="180-Day Money Back Guarantee">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Final CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Protect Yourself From Harmful EMF Radiation Today!</h2>
+            <p>Cellphones, powerlines, WIFI, and 5G satellites are a fact of life today. We live with more EMFs in our environment than ever before... And they are taking their toll.</p>
+            <a href="https://www.digistore24.com/product/466496?aff=leandrocr1" class="cta-button">CLICK HERE TO PURCHASE NOW!</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 EMF Protection. All rights reserved.</p>
+            <p>This page is an affiliate site. By clicking on the links, you will be redirected to the official product website.</p>
+            <p><small>Results may vary. The information on this site does not replace professional medical advice.</small></p>
+        </div>
+    </footer>
+    
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+        <a href="https://www.digistore24.com/product/466496?aff=leandrocr1" class="cta-button">BUY NOW!</a>
+    </div>
+    
+    <!-- Simple JavaScript for countdown timer -->
+    <script>
+        // Set the countdown date (24 hours from now)
+        const countdownDate = new Date();
+        countdownDate.setDate(countdownDate.getDate() + 1);
+        
+        // Update the countdown every second
+        const countdownTimer = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+            
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Display the countdown
+            const countdownElement = document.getElementById("countdown");
+            if (countdownElement) {
+                countdownElement.innerHTML = hours + ":" + minutes + ":" + seconds;
+            }
+            
+            // If the countdown is finished, display a message
+            if (distance < 0) {
+                clearInterval(countdownTimer);
+                if (countdownElement) {
+                    countdownElement.innerHTML = "EXPIRED";
+                }
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
